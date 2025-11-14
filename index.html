@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h1 class="title">✨ My Task Board</h1>
+
+    <div class="card input-card">
+        <input type="text" id="todo-input" placeholder="Write something..." />
+        <input type="date" id="date-input" />
+        <button id="add-btn">Add</button>
+    </div>
+
+    <div class="card filter-card">
+        <button class="filter-btn" id="filter-all">Show All</button>
+        <button class="filter-btn" id="filter-today">Today</button>
+        <button class="filter-btn delete-all" id="filter-clear">Clear All</button>
+    </div>
+
+    <div class="card list-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="todo-list">
+                <tr><td colspan="3" class="not-found">No task available</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
